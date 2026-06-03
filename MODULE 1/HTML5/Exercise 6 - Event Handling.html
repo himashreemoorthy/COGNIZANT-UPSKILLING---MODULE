@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script>
+function validatePhone(){
+alert("Phone Validated");
+}
+
+function showFee(){
+alert("Fee Displayed");
+}
+
+function submitForm(){
+alert("Registration Submitted");
+}
+
+function enlarge(img){
+img.style.width="300px";
+}
+
+function countChars(){
+document.getElementById("count").innerHTML=
+document.getElementById("msg").value.length;
+}
+</script>
+
+Phone:
+<input type="text" onblur="validatePhone()">
+
+<br><br>
+
+<select onchange="showFee()">
+<option>Music</option>
+<option>Sports</option>
+</select>
+
+<br><br>
+
+<img src="https://via.placeholder.com/150"
+ondblclick="enlarge(this)">
+
+<br><br>
+
+<textarea id="msg"
+onkeyup="countChars()"></textarea>
+
+<p>Count: <span id="count">0</span></p>
+
+<button onclick="submitForm()">
+Submit
+</button>
+
+</body>
+</html>
